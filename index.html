@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login</title>
+</head>
+<body>
+    <div class="full-screen-container">
+        <div class="login-container">
+            <h1 class="title">Login</h1>
+            <form class="login-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="input-field" id="email">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" minlength="5" class="input-field" id="password">
+                    <span class="msg">*password must be 5 characters</span>
+                </div>
+                <button id="submitBtn" class="submit-btn">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    var submitButton = document.getElementById("submitBtn");
+    submitButton.addEventListener("click", function() {
+        alert("Thanks for submitting your login information. In other projects an actual GET request is made");
+    });
+</script>
+</html>
